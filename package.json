@@ -1,0 +1,13 @@
+{
+  "name": "ticket-suporte-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API de gerenciamento ticket de suporte",
+  "main": "index.js",
+  "repository": "https://github.com/Gelzieny/ticket-suporte-api.git",
+  "author": "Gelzieny R. Martins <gelzieny@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  }
+}
