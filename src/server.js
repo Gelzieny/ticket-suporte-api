@@ -1,7 +1,10 @@
 import http from 'node:http'
+import { jsonHandle } from './middlewares/jsonHandle.js'
+import { routeHandler } from './middlewares/routeHandler.js'
 
-function handleRequest(req, res) {
-  res.end('Hello World')
+async function handleRequest(req, res) {
+  await jsonHandle(req, res)
+  routeHandler(req, res);
 }
 
 const PORT = 3001
